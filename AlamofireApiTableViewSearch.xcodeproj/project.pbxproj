@@ -7,23 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A0A9322269D152A9184ED36 /* Pods_AlamofireApiTableViewSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FF0B3331AFC26735274B7FF /* Pods_AlamofireApiTableViewSearch.framework */; };
 		EC9CCB4C29124D1E006C9D35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9CCB4B29124D1E006C9D35 /* AppDelegate.swift */; };
 		EC9CCB4E29124D1E006C9D35 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9CCB4D29124D1E006C9D35 /* SceneDelegate.swift */; };
 		EC9CCB5029124D1E006C9D35 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9CCB4F29124D1E006C9D35 /* ViewController.swift */; };
-		EC9CCB5329124D1E006C9D35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC9CCB5129124D1E006C9D35 /* Main.storyboard */; };
 		EC9CCB5529124D1F006C9D35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC9CCB5429124D1F006C9D35 /* Assets.xcassets */; };
 		EC9CCB5829124D1F006C9D35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC9CCB5629124D1F006C9D35 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0FF0B3331AFC26735274B7FF /* Pods_AlamofireApiTableViewSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlamofireApiTableViewSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		968E4EE27AB25A27F55AB744 /* Pods-AlamofireApiTableViewSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamofireApiTableViewSearch.debug.xcconfig"; path = "Target Support Files/Pods-AlamofireApiTableViewSearch/Pods-AlamofireApiTableViewSearch.debug.xcconfig"; sourceTree = "<group>"; };
 		EC9CCB4829124D1E006C9D35 /* AlamofireApiTableViewSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlamofireApiTableViewSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC9CCB4B29124D1E006C9D35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC9CCB4D29124D1E006C9D35 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EC9CCB4F29124D1E006C9D35 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EC9CCB5229124D1E006C9D35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EC9CCB5429124D1F006C9D35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC9CCB5729124D1F006C9D35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC9CCB5929124D1F006C9D35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE6425BA6240162473B4B887 /* Pods-AlamofireApiTableViewSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamofireApiTableViewSearch.release.xcconfig"; path = "Target Support Files/Pods-AlamofireApiTableViewSearch/Pods-AlamofireApiTableViewSearch.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A0A9322269D152A9184ED36 /* Pods_AlamofireApiTableViewSearch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		53E6676DF6EC2BD54938DB6A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0FF0B3331AFC26735274B7FF /* Pods_AlamofireApiTableViewSearch.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8E63C791FBFB7397BB350DD3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				968E4EE27AB25A27F55AB744 /* Pods-AlamofireApiTableViewSearch.debug.xcconfig */,
+				FE6425BA6240162473B4B887 /* Pods-AlamofireApiTableViewSearch.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		EC9CCB3F29124D1E006C9D35 = {
 			isa = PBXGroup;
 			children = (
 				EC9CCB4A29124D1E006C9D35 /* AlamofireApiTableViewSearch */,
 				EC9CCB4929124D1E006C9D35 /* Products */,
+				8E63C791FBFB7397BB350DD3 /* Pods */,
+				53E6676DF6EC2BD54938DB6A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +78,70 @@
 		EC9CCB4A29124D1E006C9D35 /* AlamofireApiTableViewSearch */ = {
 			isa = PBXGroup;
 			children = (
+				EC9CCB6129125088006C9D35 /* Sources */,
+				EC9CCB6029125082006C9D35 /* Resources */,
+			);
+			path = AlamofireApiTableViewSearch;
+			sourceTree = "<group>";
+		};
+		EC9CCB5F2912507D006C9D35 /* App */ = {
+			isa = PBXGroup;
+			children = (
 				EC9CCB4B29124D1E006C9D35 /* AppDelegate.swift */,
 				EC9CCB4D29124D1E006C9D35 /* SceneDelegate.swift */,
-				EC9CCB4F29124D1E006C9D35 /* ViewController.swift */,
-				EC9CCB5129124D1E006C9D35 /* Main.storyboard */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		EC9CCB6029125082006C9D35 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				EC9CCB5429124D1F006C9D35 /* Assets.xcassets */,
 				EC9CCB5629124D1F006C9D35 /* LaunchScreen.storyboard */,
 				EC9CCB5929124D1F006C9D35 /* Info.plist */,
 			);
-			path = AlamofireApiTableViewSearch;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EC9CCB6129125088006C9D35 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				EC9CCB6429125110006C9D35 /* Scene */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		EC9CCB6229125093006C9D35 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EC9CCB63291250A0006C9D35 /* Cell */,
+				EC9CCB4F29124D1E006C9D35 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EC9CCB63291250A0006C9D35 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		EC9CCB6429125110006C9D35 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				EC9CCB5F2912507D006C9D35 /* App */,
+				EC9CCB6529125127006C9D35 /* Model */,
+				EC9CCB6229125093006C9D35 /* Controllers */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		EC9CCB6529125127006C9D35 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +151,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC9CCB5C29124D1F006C9D35 /* Build configuration list for PBXNativeTarget "AlamofireApiTableViewSearch" */;
 			buildPhases = (
+				562DA876C13093C93121C031 /* [CP] Check Pods Manifest.lock */,
 				EC9CCB4429124D1E006C9D35 /* Sources */,
 				EC9CCB4529124D1E006C9D35 /* Frameworks */,
 				EC9CCB4629124D1E006C9D35 /* Resources */,
+				430E263A6A3553183B555169 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,11 +206,52 @@
 			files = (
 				EC9CCB5829124D1F006C9D35 /* LaunchScreen.storyboard in Resources */,
 				EC9CCB5529124D1F006C9D35 /* Assets.xcassets in Resources */,
-				EC9CCB5329124D1E006C9D35 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		430E263A6A3553183B555169 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlamofireApiTableViewSearch/Pods-AlamofireApiTableViewSearch-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlamofireApiTableViewSearch/Pods-AlamofireApiTableViewSearch-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AlamofireApiTableViewSearch/Pods-AlamofireApiTableViewSearch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		562DA876C13093C93121C031 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AlamofireApiTableViewSearch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EC9CCB4429124D1E006C9D35 /* Sources */ = {
@@ -147,14 +267,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EC9CCB5129124D1E006C9D35 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EC9CCB5229124D1E006C9D35 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EC9CCB5629124D1F006C9D35 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,6 +394,7 @@
 		};
 		EC9CCB5D29124D1F006C9D35 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 968E4EE27AB25A27F55AB744 /* Pods-AlamofireApiTableViewSearch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -289,12 +402,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3496F3A4HL;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AlamofireApiTableViewSearch/Info.plist;
+				INFOPLIST_FILE = AlamofireApiTableViewSearch/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,14 +415,18 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.my.AlamofireApiTableViewSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		EC9CCB5E29124D1F006C9D35 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE6425BA6240162473B4B887 /* Pods-AlamofireApiTableViewSearch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -317,12 +434,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3496F3A4HL;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AlamofireApiTableViewSearch/Info.plist;
+				INFOPLIST_FILE = AlamofireApiTableViewSearch/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +447,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.my.AlamofireApiTableViewSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
