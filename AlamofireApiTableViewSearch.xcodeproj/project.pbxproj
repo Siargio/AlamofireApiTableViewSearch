@@ -8,16 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		6A0A9322269D152A9184ED36 /* Pods_AlamofireApiTableViewSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FF0B3331AFC26735274B7FF /* Pods_AlamofireApiTableViewSearch.framework */; };
+		EC37D25A2912A78200FF3417 /* UILabel + Extensoins.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC37D2592912A78200FF3417 /* UILabel + Extensoins.swift */; };
+		EC37D25D2912B4F700FF3417 /* Metric.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC37D25C2912B4F700FF3417 /* Metric.swift */; };
 		EC9CCB4C29124D1E006C9D35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9CCB4B29124D1E006C9D35 /* AppDelegate.swift */; };
 		EC9CCB4E29124D1E006C9D35 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9CCB4D29124D1E006C9D35 /* SceneDelegate.swift */; };
 		EC9CCB5029124D1E006C9D35 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9CCB4F29124D1E006C9D35 /* ViewController.swift */; };
 		EC9CCB5529124D1F006C9D35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC9CCB5429124D1F006C9D35 /* Assets.xcassets */; };
 		EC9CCB5829124D1F006C9D35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC9CCB5629124D1F006C9D35 /* LaunchScreen.storyboard */; };
+		EC9CCB672912544F006C9D35 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9CCB662912544F006C9D35 /* Model.swift */; };
+		EC9CCB6929125495006C9D35 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9CCB6829125495006C9D35 /* CustomTableViewCell.swift */; };
+		EC9CCB71291278D1006C9D35 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9CCB70291278D1006C9D35 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0FF0B3331AFC26735274B7FF /* Pods_AlamofireApiTableViewSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlamofireApiTableViewSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		968E4EE27AB25A27F55AB744 /* Pods-AlamofireApiTableViewSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamofireApiTableViewSearch.debug.xcconfig"; path = "Target Support Files/Pods-AlamofireApiTableViewSearch/Pods-AlamofireApiTableViewSearch.debug.xcconfig"; sourceTree = "<group>"; };
+		EC37D2592912A78200FF3417 /* UILabel + Extensoins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel + Extensoins.swift"; sourceTree = "<group>"; };
+		EC37D25C2912B4F700FF3417 /* Metric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metric.swift; sourceTree = "<group>"; };
 		EC9CCB4829124D1E006C9D35 /* AlamofireApiTableViewSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlamofireApiTableViewSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC9CCB4B29124D1E006C9D35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC9CCB4D29124D1E006C9D35 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -25,6 +32,9 @@
 		EC9CCB5429124D1F006C9D35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC9CCB5729124D1F006C9D35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC9CCB5929124D1F006C9D35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC9CCB662912544F006C9D35 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		EC9CCB6829125495006C9D35 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		EC9CCB70291278D1006C9D35 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		FE6425BA6240162473B4B887 /* Pods-AlamofireApiTableViewSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamofireApiTableViewSearch.release.xcconfig"; path = "Target Support Files/Pods-AlamofireApiTableViewSearch/Pods-AlamofireApiTableViewSearch.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -55,6 +65,14 @@
 				FE6425BA6240162473B4B887 /* Pods-AlamofireApiTableViewSearch.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		EC37D25B2912B4E900FF3417 /* Metric */ = {
+			isa = PBXGroup;
+			children = (
+				EC37D25C2912B4F700FF3417 /* Metric.swift */,
+			);
+			path = Metric;
 			sourceTree = "<group>";
 		};
 		EC9CCB3F29124D1E006C9D35 = {
@@ -107,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				EC9CCB6429125110006C9D35 /* Scene */,
+				EC9CCB6D2912707E006C9D35 /* Extensoins */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -115,7 +134,9 @@
 			isa = PBXGroup;
 			children = (
 				EC9CCB63291250A0006C9D35 /* Cell */,
+				EC9CCB6C291254C4006C9D35 /* View */,
 				EC9CCB4F29124D1E006C9D35 /* ViewController.swift */,
+				EC9CCB70291278D1006C9D35 /* DetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -123,6 +144,7 @@
 		EC9CCB63291250A0006C9D35 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				EC9CCB6829125495006C9D35 /* CustomTableViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -140,8 +162,25 @@
 		EC9CCB6529125127006C9D35 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EC9CCB662912544F006C9D35 /* Model.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		EC9CCB6C291254C4006C9D35 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EC9CCB6D2912707E006C9D35 /* Extensoins */ = {
+			isa = PBXGroup;
+			children = (
+				EC37D25B2912B4E900FF3417 /* Metric */,
+				EC37D2592912A78200FF3417 /* UILabel + Extensoins.swift */,
+			);
+			path = Extensoins;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +298,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC9CCB5029124D1E006C9D35 /* ViewController.swift in Sources */,
+				EC9CCB6929125495006C9D35 /* CustomTableViewCell.swift in Sources */,
 				EC9CCB4C29124D1E006C9D35 /* AppDelegate.swift in Sources */,
 				EC9CCB4E29124D1E006C9D35 /* SceneDelegate.swift in Sources */,
+				EC9CCB672912544F006C9D35 /* Model.swift in Sources */,
+				EC37D25D2912B4F700FF3417 /* Metric.swift in Sources */,
+				EC37D25A2912A78200FF3417 /* UILabel + Extensoins.swift in Sources */,
+				EC9CCB71291278D1006C9D35 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,7 +451,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -439,7 +483,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
