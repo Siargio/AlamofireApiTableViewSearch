@@ -15,7 +15,6 @@ class DetailAlbumViewController: UIViewController {
     
     private let albumLogo: UIImageView = {
         let imageView = UIImageView()
-        imageView.backgroundColor = .red
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
