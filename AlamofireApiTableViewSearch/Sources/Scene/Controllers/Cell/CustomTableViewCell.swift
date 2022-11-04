@@ -19,13 +19,12 @@ final class CustomTableViewCell: UITableViewCell {
     }()
 
     private let role = UILabel(font: Metric.fontLabelTableView)
-
     private let name = UILabel(font: Metric.fontLabelTableView)
 
     //MARK: - LifeCycle
 
     override func layoutSubviews() {
-        super.layoutSubviews() // для того чтобы при загрузке ячейки мы снова перерисовывали для альбома размеры
+        super.layoutSubviews()
 
         characterImage.layer.cornerRadius = characterImage.frame.width / 2
     }
@@ -47,17 +46,17 @@ final class CustomTableViewCell: UITableViewCell {
         didSet {
             role.text = character?.name
             name.text = character?.type
-            DispatchQueue.global().async {  //
+            DispatchQueue.global().async {
                 guard let imagePath = self.character?.imageUrl,
                       let imageURL = URL(string: imagePath),
                       let imageData = try? Data(contentsOf: imageURL)
                 else {
-                    DispatchQueue.main.async {  //
+                    DispatchQueue.main.async {
                         self.characterImage.image = UIImage(named: "square-image")
                     }
                         return
                 }
-                DispatchQueue.main.async {  //
+                DispatchQueue.main.async {  
                     self.characterImage.image = UIImage(data: imageData)
                 }
             }
