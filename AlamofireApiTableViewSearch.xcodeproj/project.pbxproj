@@ -15,9 +15,10 @@
 		EC9CCB5029124D1E006C9D35 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9CCB4F29124D1E006C9D35 /* ViewController.swift */; };
 		EC9CCB5529124D1F006C9D35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC9CCB5429124D1F006C9D35 /* Assets.xcassets */; };
 		EC9CCB5829124D1F006C9D35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC9CCB5629124D1F006C9D35 /* LaunchScreen.storyboard */; };
-		EC9CCB672912544F006C9D35 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9CCB662912544F006C9D35 /* Model.swift */; };
+		EC9CCB672912544F006C9D35 /* Characters.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9CCB662912544F006C9D35 /* Characters.swift */; };
 		EC9CCB6929125495006C9D35 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9CCB6829125495006C9D35 /* CustomTableViewCell.swift */; };
 		EC9CCB71291278D1006C9D35 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9CCB70291278D1006C9D35 /* DetailViewController.swift */; };
+		ECD5DBC62917D8E4004D72E9 /* GretingPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD5DBC52917D8E4004D72E9 /* GretingPresenterProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,9 +33,10 @@
 		EC9CCB5429124D1F006C9D35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC9CCB5729124D1F006C9D35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC9CCB5929124D1F006C9D35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EC9CCB662912544F006C9D35 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		EC9CCB662912544F006C9D35 /* Characters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Characters.swift; sourceTree = "<group>"; };
 		EC9CCB6829125495006C9D35 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		EC9CCB70291278D1006C9D35 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		ECD5DBC52917D8E4004D72E9 /* GretingPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GretingPresenterProtocol.swift; sourceTree = "<group>"; };
 		FE6425BA6240162473B4B887 /* Pods-AlamofireApiTableViewSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamofireApiTableViewSearch.release.xcconfig"; path = "Target Support Files/Pods-AlamofireApiTableViewSearch/Pods-AlamofireApiTableViewSearch.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,7 +126,8 @@
 		EC9CCB6129125088006C9D35 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				EC9CCB6429125110006C9D35 /* Scene */,
+				EC9CCB5F2912507D006C9D35 /* App */,
+				ECD5DBC92917DA3D004D72E9 /* Scene */,
 				EC9CCB6D2912707E006C9D35 /* Extensoins */,
 			);
 			path = Sources;
@@ -133,10 +136,7 @@
 		EC9CCB6229125093006C9D35 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				EC9CCB63291250A0006C9D35 /* Cell */,
-				EC9CCB6C291254C4006C9D35 /* View */,
 				EC9CCB4F29124D1E006C9D35 /* ViewController.swift */,
-				EC9CCB70291278D1006C9D35 /* DetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -149,29 +149,22 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
-		EC9CCB6429125110006C9D35 /* Scene */ = {
-			isa = PBXGroup;
-			children = (
-				EC9CCB5F2912507D006C9D35 /* App */,
-				EC9CCB6529125127006C9D35 /* Model */,
-				EC9CCB6229125093006C9D35 /* Controllers */,
-			);
-			path = Scene;
-			sourceTree = "<group>";
-		};
 		EC9CCB6529125127006C9D35 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				EC9CCB662912544F006C9D35 /* Model.swift */,
+				EC9CCB662912544F006C9D35 /* Characters.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		EC9CCB6C291254C4006C9D35 /* View */ = {
+		EC9CCB6C291254C4006C9D35 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				EC9CCB6529125127006C9D35 /* Model */,
+				EC9CCB63291250A0006C9D35 /* Cell */,
+				EC9CCB6229125093006C9D35 /* Controllers */,
 			);
-			path = View;
+			path = Main;
 			sourceTree = "<group>";
 		};
 		EC9CCB6D2912707E006C9D35 /* Extensoins */ = {
@@ -181,6 +174,32 @@
 				EC37D2592912A78200FF3417 /* UILabel + Extensoins.swift */,
 			);
 			path = Extensoins;
+			sourceTree = "<group>";
+		};
+		ECD5DBC42917D8B5004D72E9 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				ECD5DBC52917D8E4004D72E9 /* GretingPresenterProtocol.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		ECD5DBC82917D9BC004D72E9 /* DetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EC9CCB70291278D1006C9D35 /* DetailViewController.swift */,
+			);
+			path = DetailViewController;
+			sourceTree = "<group>";
+		};
+		ECD5DBC92917DA3D004D72E9 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				EC9CCB6C291254C4006C9D35 /* Main */,
+				ECD5DBC82917D9BC004D72E9 /* DetailViewController */,
+				ECD5DBC42917D8B5004D72E9 /* Presenters */,
+			);
+			path = Scene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,10 +317,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC9CCB5029124D1E006C9D35 /* ViewController.swift in Sources */,
+				ECD5DBC62917D8E4004D72E9 /* GretingPresenterProtocol.swift in Sources */,
 				EC9CCB6929125495006C9D35 /* CustomTableViewCell.swift in Sources */,
 				EC9CCB4C29124D1E006C9D35 /* AppDelegate.swift in Sources */,
 				EC9CCB4E29124D1E006C9D35 /* SceneDelegate.swift in Sources */,
-				EC9CCB672912544F006C9D35 /* Model.swift in Sources */,
+				EC9CCB672912544F006C9D35 /* Characters.swift in Sources */,
 				EC37D25D2912B4F700FF3417 /* Metric.swift in Sources */,
 				EC37D25A2912A78200FF3417 /* UILabel + Extensoins.swift in Sources */,
 				EC9CCB71291278D1006C9D35 /* DetailViewController.swift in Sources */,
