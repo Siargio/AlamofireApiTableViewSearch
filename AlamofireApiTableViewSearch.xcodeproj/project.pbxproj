@@ -12,13 +12,14 @@
 		EC37D25D2912B4F700FF3417 /* Metric.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC37D25C2912B4F700FF3417 /* Metric.swift */; };
 		EC9CCB4C29124D1E006C9D35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9CCB4B29124D1E006C9D35 /* AppDelegate.swift */; };
 		EC9CCB4E29124D1E006C9D35 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9CCB4D29124D1E006C9D35 /* SceneDelegate.swift */; };
-		EC9CCB5029124D1E006C9D35 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9CCB4F29124D1E006C9D35 /* ViewController.swift */; };
 		EC9CCB5529124D1F006C9D35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC9CCB5429124D1F006C9D35 /* Assets.xcassets */; };
 		EC9CCB5829124D1F006C9D35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC9CCB5629124D1F006C9D35 /* LaunchScreen.storyboard */; };
 		EC9CCB672912544F006C9D35 /* Characters.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9CCB662912544F006C9D35 /* Characters.swift */; };
 		EC9CCB6929125495006C9D35 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9CCB6829125495006C9D35 /* CustomTableViewCell.swift */; };
 		EC9CCB71291278D1006C9D35 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9CCB70291278D1006C9D35 /* DetailViewController.swift */; };
-		ECD5DBC62917D8E4004D72E9 /* GretingPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD5DBC52917D8E4004D72E9 /* GretingPresenterProtocol.swift */; };
+		ECBF2BE1291A6F5A00E3174A /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBF2BE0291A6F5A00E3174A /* DetailPresenter.swift */; };
+		ECCDC1102919AA5300E88C34 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCDC10F2919AA5300E88C34 /* MainPresenter.swift */; };
+		ECCDC1122919AA6300E88C34 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCDC1112919AA6300E88C34 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,14 +30,15 @@
 		EC9CCB4829124D1E006C9D35 /* AlamofireApiTableViewSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlamofireApiTableViewSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC9CCB4B29124D1E006C9D35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC9CCB4D29124D1E006C9D35 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EC9CCB4F29124D1E006C9D35 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EC9CCB5429124D1F006C9D35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC9CCB5729124D1F006C9D35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC9CCB5929124D1F006C9D35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC9CCB662912544F006C9D35 /* Characters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Characters.swift; sourceTree = "<group>"; };
 		EC9CCB6829125495006C9D35 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		EC9CCB70291278D1006C9D35 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		ECD5DBC52917D8E4004D72E9 /* GretingPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GretingPresenterProtocol.swift; sourceTree = "<group>"; };
+		ECBF2BE0291A6F5A00E3174A /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		ECCDC10F2919AA5300E88C34 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		ECCDC1112919AA6300E88C34 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = "../../../../../New Group/MainViewController.swift"; sourceTree = "<group>"; };
 		FE6425BA6240162473B4B887 /* Pods-AlamofireApiTableViewSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamofireApiTableViewSearch.release.xcconfig"; path = "Target Support Files/Pods-AlamofireApiTableViewSearch/Pods-AlamofireApiTableViewSearch.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				EC9CCB4A29124D1E006C9D35 /* AlamofireApiTableViewSearch */,
+				ECCDC10E2919AA3300E88C34 /* New Group */,
 				EC9CCB4929124D1E006C9D35 /* Products */,
 				8E63C791FBFB7397BB350DD3 /* Pods */,
 				53E6676DF6EC2BD54938DB6A /* Frameworks */,
@@ -128,7 +131,7 @@
 			children = (
 				EC9CCB5F2912507D006C9D35 /* App */,
 				ECD5DBC92917DA3D004D72E9 /* Scene */,
-				EC9CCB6D2912707E006C9D35 /* Extensoins */,
+				EC9CCB6D2912707E006C9D35 /* Extensions + Metric */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -136,7 +139,7 @@
 		EC9CCB6229125093006C9D35 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				EC9CCB4F29124D1E006C9D35 /* ViewController.swift */,
+				ECCDC1112919AA6300E88C34 /* MainViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -163,25 +166,50 @@
 				EC9CCB6529125127006C9D35 /* Model */,
 				EC9CCB63291250A0006C9D35 /* Cell */,
 				EC9CCB6229125093006C9D35 /* Controllers */,
+				ECD5DBC42917D8B5004D72E9 /* MainPresenter */,
 			);
 			path = Main;
 			sourceTree = "<group>";
 		};
-		EC9CCB6D2912707E006C9D35 /* Extensoins */ = {
+		EC9CCB6D2912707E006C9D35 /* Extensions + Metric */ = {
 			isa = PBXGroup;
 			children = (
-				EC37D25B2912B4E900FF3417 /* Metric */,
 				EC37D2592912A78200FF3417 /* UILabel + Extensoins.swift */,
+				EC37D25B2912B4E900FF3417 /* Metric */,
 			);
-			path = Extensoins;
+			path = "Extensions + Metric";
 			sourceTree = "<group>";
 		};
-		ECD5DBC42917D8B5004D72E9 /* Presenters */ = {
+		ECB89038291A8A8E0018313F /* DetailPresenter */ = {
 			isa = PBXGroup;
 			children = (
-				ECD5DBC52917D8E4004D72E9 /* GretingPresenterProtocol.swift */,
+				ECBF2BE0291A6F5A00E3174A /* DetailPresenter.swift */,
 			);
-			path = Presenters;
+			path = DetailPresenter;
+			sourceTree = "<group>";
+		};
+		ECB89039291A8AAB0018313F /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				ECD5DBC82917D9BC004D72E9 /* DetailViewController */,
+				ECB89038291A8A8E0018313F /* DetailPresenter */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		ECCDC10E2919AA3300E88C34 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		ECD5DBC42917D8B5004D72E9 /* MainPresenter */ = {
+			isa = PBXGroup;
+			children = (
+				ECCDC10F2919AA5300E88C34 /* MainPresenter.swift */,
+			);
+			path = MainPresenter;
 			sourceTree = "<group>";
 		};
 		ECD5DBC82917D9BC004D72E9 /* DetailViewController */ = {
@@ -196,8 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				EC9CCB6C291254C4006C9D35 /* Main */,
-				ECD5DBC82917D9BC004D72E9 /* DetailViewController */,
-				ECD5DBC42917D8B5004D72E9 /* Presenters */,
+				ECB89039291A8AAB0018313F /* Detail */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -316,15 +343,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC9CCB5029124D1E006C9D35 /* ViewController.swift in Sources */,
-				ECD5DBC62917D8E4004D72E9 /* GretingPresenterProtocol.swift in Sources */,
 				EC9CCB6929125495006C9D35 /* CustomTableViewCell.swift in Sources */,
 				EC9CCB4C29124D1E006C9D35 /* AppDelegate.swift in Sources */,
 				EC9CCB4E29124D1E006C9D35 /* SceneDelegate.swift in Sources */,
+				ECCDC1122919AA6300E88C34 /* MainViewController.swift in Sources */,
+				ECCDC1102919AA5300E88C34 /* MainPresenter.swift in Sources */,
 				EC9CCB672912544F006C9D35 /* Characters.swift in Sources */,
 				EC37D25D2912B4F700FF3417 /* Metric.swift in Sources */,
 				EC37D25A2912A78200FF3417 /* UILabel + Extensoins.swift in Sources */,
 				EC9CCB71291278D1006C9D35 /* DetailViewController.swift in Sources */,
+				ECBF2BE1291A6F5A00E3174A /* DetailPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

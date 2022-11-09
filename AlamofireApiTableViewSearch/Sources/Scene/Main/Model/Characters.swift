@@ -7,11 +7,11 @@
 
 import Foundation
 
-struct Characters: Codable {
+struct Characters: Decodable {
     let cards: [Card]
 }
 
-struct Card: Codable {
+struct Card: Decodable {
     let name: String?
     let type: String?
     let setName: String?

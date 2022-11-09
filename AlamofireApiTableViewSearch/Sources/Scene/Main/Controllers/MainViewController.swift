@@ -8,16 +8,23 @@
 import UIKit
 import Alamofire
 
+//protocol MainViewControllerProtocol: AnyObject { //AnyObject говорит что это ссылочный тип данных
+//    init(presenter: GreetingPresenterProtocol)
+//}
+
 // MARK: - UIElements
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
 
-    var characters: [Card] = []
+    var presenter: GreetingPresenter?
+
+    var characters = [Card]()
+
     var url = "https://api.magicthegathering.io/v1/cards"
 
     // MARK: - UIElements
 
-    let tableView: UITableView = {
+     let tableView: UITableView = {
         let tableView = UITableView()
         tableView.register(CustomTableViewCell.self, forCellReuseIdentifier: "cell")
         tableView.translatesAutoresizingMaskIntoConstraints = false
@@ -26,14 +33,17 @@ class ViewController: UIViewController {
 
     private let searchController = UISearchController(searchResultsController: nil)
 
+    // MARK: - LifeCycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //presenter = GreetingPresenter(view: self)
         setupDelegate()
         setNavigationBar()
         setupHierarchy()
         setupLayout()
-        fetchSeries()
+        //fetchSeries(url: url)
+        //presenter.fetchSeries(url: url)
     }
 
     // MARK: - Setup
@@ -42,14 +52,14 @@ class ViewController: UIViewController {
         view.addSubview(tableView)
     }
 
-    private func setupDelegate() {
+     func setupDelegate() {
         tableView.delegate = self
         tableView.dataSource = self
 
     }
 
     private func setNavigationBar() {
-        navigationItem.title = "Albums"
+        navigationItem.title = "Album cards"
         navigationItem.searchController = searchController // строка поиска в навигейшен баре
     }
 
@@ -60,15 +70,15 @@ class ViewController: UIViewController {
         definesPresentationContext = true // позволяет опустить строку поиска на другой экран
     }
 
-    func fetchSeries() {
-        let request = AF.request(url)
-        request.responseDecodable(of: Characters.self) { (data) in
-            guard let char = data.value else { return }
-            let characters = char.cards
-            self.characters = characters
-            self.tableView.reloadData()
-        }
-    }
+//    func fetchSeries(url: String) {
+//        let request = AF.request(url)
+//        request.responseDecodable(of: Characters.self) { [weak self ]data in
+//            guard let char = data.value else { return }
+//            let characters = char.cards
+//            self?.characters = characters
+//            self?.tableView.reloadData()
+//        }
+//    }
 
     private func setupLayout() {
         NSLayoutConstraint.activate([
@@ -82,8 +92,9 @@ class ViewController: UIViewController {
 
 // MARK: - UITableViewDataSource
 
-extension ViewController: UITableViewDataSource {
+extension MainViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        //return presenter.returnCardsCount()
         return characters.count
     }
 
@@ -96,7 +107,7 @@ extension ViewController: UITableViewDataSource {
 
 // MARK: - UITableViewDelegate
 
-extension ViewController: UITableViewDelegate {
+extension MainViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         70
     }
@@ -109,3 +120,11 @@ extension ViewController: UITableViewDelegate {
         navigationController?.present(detailAlbumViewController, animated: true)
     }
 }
+
+//extension MainViewController: PresenterView {
+//    func fetchSeries(url: String) {
+//        <#code#>
+//    }
+//
+//
+//}
