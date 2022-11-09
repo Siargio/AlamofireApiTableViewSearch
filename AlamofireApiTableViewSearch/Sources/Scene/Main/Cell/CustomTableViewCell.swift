@@ -9,6 +9,8 @@ import UIKit
 
 final class CustomTableViewCell: UITableViewCell {
 
+    //var cards: Card?
+
     // MARK: - UIElements
 
     private let characterImage: UIImageView = {
@@ -37,23 +39,22 @@ final class CustomTableViewCell: UITableViewCell {
 
     //MARK: - Setups
 
-    var character: Card? {
-        didSet {
-            role.text = character?.name
-            name.text = character?.type
-            DispatchQueue.global().async {
-                guard let imagePath = self.character?.imageUrl,
-                      let imageURL = URL(string: imagePath),
-                      let imageData = try? Data(contentsOf: imageURL)
-                else {
-                    DispatchQueue.main.async {
-                        self.characterImage.image = UIImage(named: "square-image")
-                    }
-                    return
-                }
+    func setModel(model: Card?) {
+        role.text = model?.name
+        name.text = model?.type
+        
+        DispatchQueue.global().async {
+            guard let imagePath = model?.imageUrl,
+                  let imageURL = URL(string: imagePath),
+                  let imageData = try? Data(contentsOf: imageURL)
+            else {
                 DispatchQueue.main.async {
-                    self.characterImage.image = UIImage(data: imageData)
+                    self.characterImage.image = UIImage(named: "square-image")
                 }
+                return
+            }
+            DispatchQueue.main.async {
+                self.characterImage.image = UIImage(data: imageData)
             }
         }
     }
