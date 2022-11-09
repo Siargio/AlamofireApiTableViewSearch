@@ -11,7 +11,6 @@
 		EC37D25A2912A78200FF3417 /* UILabel + Extensoins.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC37D2592912A78200FF3417 /* UILabel + Extensoins.swift */; };
 		EC37D25D2912B4F700FF3417 /* Metric.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC37D25C2912B4F700FF3417 /* Metric.swift */; };
 		EC9CCB4C29124D1E006C9D35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9CCB4B29124D1E006C9D35 /* AppDelegate.swift */; };
-		EC9CCB4E29124D1E006C9D35 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9CCB4D29124D1E006C9D35 /* SceneDelegate.swift */; };
 		EC9CCB5529124D1F006C9D35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC9CCB5429124D1F006C9D35 /* Assets.xcassets */; };
 		EC9CCB5829124D1F006C9D35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC9CCB5629124D1F006C9D35 /* LaunchScreen.storyboard */; };
 		EC9CCB672912544F006C9D35 /* Characters.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9CCB662912544F006C9D35 /* Characters.swift */; };
@@ -29,7 +28,6 @@
 		EC37D25C2912B4F700FF3417 /* Metric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metric.swift; sourceTree = "<group>"; };
 		EC9CCB4829124D1E006C9D35 /* AlamofireApiTableViewSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlamofireApiTableViewSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC9CCB4B29124D1E006C9D35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EC9CCB4D29124D1E006C9D35 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EC9CCB5429124D1F006C9D35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC9CCB5729124D1F006C9D35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC9CCB5929124D1F006C9D35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -111,7 +109,6 @@
 			isa = PBXGroup;
 			children = (
 				EC9CCB4B29124D1E006C9D35 /* AppDelegate.swift */,
-				EC9CCB4D29124D1E006C9D35 /* SceneDelegate.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -345,7 +342,6 @@
 			files = (
 				EC9CCB6929125495006C9D35 /* CustomTableViewCell.swift in Sources */,
 				EC9CCB4C29124D1E006C9D35 /* AppDelegate.swift in Sources */,
-				EC9CCB4E29124D1E006C9D35 /* SceneDelegate.swift in Sources */,
 				ECCDC1122919AA6300E88C34 /* MainViewController.swift in Sources */,
 				ECCDC1102919AA5300E88C34 /* MainPresenter.swift in Sources */,
 				EC9CCB672912544F006C9D35 /* Characters.swift in Sources */,
