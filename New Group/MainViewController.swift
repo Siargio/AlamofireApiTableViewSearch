@@ -10,9 +10,8 @@ import Alamofire
 
 final class MainViewController : UIViewController {
 
-    var presenter: MainViewPresenterProtocol!
-    var url = "https://api.magicthegathering.io/v1/cards"
-    var timer: Timer?
+    private var presenter: MainViewPresenterProtocol!
+    private var url = "https://api.magicthegathering.io/v1/cards"
 
     //MARK: - UIElements
 
@@ -38,19 +37,19 @@ final class MainViewController : UIViewController {
 
     // MARK: - Setup
 
-    func configureVc() {
+    private func configureVc() {
         presenter = MainPresenter(view: self)
         presenter.fetchSeries(url: url)
     }
 
-    func setupDelegate() {
+    private func setupDelegate() {
         tableView.delegate = self
         tableView.dataSource = self
 
         searchController.searchBar.delegate = self
     }
 
-    func setupNavigationBar() {
+    private func setupNavigationBar() {
         navigationItem.title = "Albums cards"
 
         navigationItem.searchController = searchController
@@ -84,7 +83,7 @@ extension MainViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? CustomTableViewCell
-        cell?.character = presenter.getUsedCards(at: indexPath.row)
+        cell?.setModel(model: presenter.getUsedCards(at: indexPath.row))
         return cell ?? UITableViewCell()
     }
 }
@@ -111,18 +110,6 @@ extension MainViewController: UITableViewDelegate {
 extension MainViewController: UISearchBarDelegate {
 
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-
-        let text = searchText.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
-
-        if text != "" {
-            timer?.invalidate()
-            timer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false, block: { [weak self ] _ in
-                self?.url = "https://api.magicthegathering.io/v1/cards?name=\(searchText)"
-                self?.presenter.fetchSeries(url: self?.url ?? "")
-            })
-        } else {
-            let urlString = url
-            presenter.fetchSeries(url: urlString)
-        }
+        presenter.searchCards(searchText: searchText)
     }
 }
